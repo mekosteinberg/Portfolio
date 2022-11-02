@@ -1,7 +1,111 @@
+body {
+    background-color: rgb(64, 23, 77);
+    margin-left: 3vh;
+    margin-right: 3vh;
+    width: 100%;
+    margin: 0 auto;
+}
 h1 {
+    background: url('https://i.imgur.com/IwzXkdT.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 3vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 50%;
+    block-size: 20vh;
+    font-size: 6vh;
+    color: white;
+    text-shadow: 2vh -1vh 2vh #000
+    /* used codesdope.com to play with text shadow */
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.mainbox {
+    display: flex;
+    flex-direction: column;
+    block-size: 12vh;
+}
+
+.first, .second, .third, .fourth {
+    display: flex;
+    justify-content: center;
+    background-color: floralwhite;
+    margin: 3vh;
+    padding: 4vh;
+    width: 60%;
+
+}
+.first, .third {
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+.second, .fourth {
+    display: flex;
+    float: right;
+}
+
+.workExpList li {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: antiquewhite;
     width: 100%;
-    font-size: 5vh;
+    font-size: 2vh;
+    
+}
+footer li {
+    list-style: none;
+    align-items: center;
+    padding: .5vh;
+}
+footer ul{
+    display: flex;
+    justify-content: space-around;
+    width: 30%
+    padding: 2vh
+    margin:2vh
+}
+.emailSubmit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+}
+
+.third > .content {
+    height: 40px;
+    transition: height .5s;
+    -webkit-transition: height .5s;
+    -moz-transition: height .5s;
+}
+
+.third > .content.show {
+    height: 600px;
+}
+
+.third > .content > .workExpList {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    /* stackoverflow, https://stackoverflow.com/questions/3331353/transitions-on-the-css-display-property */
+}
+
+.third > .content.show > .workExpList {
+    visibility: visible;
+    opacity: 1;    
 }

@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">      
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
     </script>
@@ -17,23 +19,54 @@
         <h1>Meko Steinberg</h1>
     </header>
     <div class="main box">
-        <div class="first">Home</div>
+        <div class="first">
+            <h3>Welcome!</h3>
+            <article>Hello, welcome to my portfolio page. Follow the various sections to find out more about my backround, work experience, and various projects I've worked on.</article>
+        </div>
         <div class="second">Roots</div>
-        <div class="third">Resume</div>
+        <div class="third">
+            <div class="content">
+            <h3 id="workExpHeader">Work Experience <i class="icon-plus"></i></h3>
+                <ul class="workExpList">
+                    <li id="soundO2">
+                        <h4>Sound Oxygen Services</h4>
+                        <button id="sO2Modal">Details</button>
+                    </li>
+                   <li id="fircrest">
+                        <h4>Fircrest RHC</h4>
+                        <button>Details</button>
+                    </li>
+                    <li id="noblewulf">
+                        <h4>Noble & Wulf/Billie's Jewelry & Accessories</h4>
+                        <button>Details</button>
+                    </li>
+                    <li id="specialtyPump">
+                        <h4>Specialty Pump & Well</h4>
+                        <button>Details</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <div class="fourth">Projects</div>
     </div>
     <footer>
         <div>
-            <ul>Contact Info</ul>
-                <li>email</li>
-                <li>phone</li>
+            <ul id="contactInfo">Contact Info</ul>
+                <li>steinberg.meko@outlook.com</li>
+                <li>555-2368</li>
         </div>
+        <div class="emailSubmit">
+            <h4>Keep in touch!<br/>Let me know you visited my site!</h4>
             <input type="email" placeholder="Your email here">
             <input type="submit">
-        <ul>
-            <li><a href="">LinkedIn</a></li>
-            <li><a href="">Github</a></li>
-        </ul>
+        </div>
+        <div>
+            <ul id="links">
+                <li><a href="https://www.linkedin.com/in/meko-steinberg-60124527/"><img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Linkedin_unofficial_colored_svg-512.png" alt="LinkedInIcon" width="48" height="48"></a></li>
+                <li><a href="https://github.com/mekosteinberg"><img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" alt="GithubIcon" width="48" height="48"></a></li>
+            </ul>
+        </div>
     </footer>
+    
 </body>
 </html>
