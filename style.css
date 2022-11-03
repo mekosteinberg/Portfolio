@@ -5,32 +5,58 @@ body {
     margin-right: 3vh;
     width: 100%;
     margin: 0 auto;
-}
-h1 {
-    background: url('https://i.imgur.com/IwzXkdT.jpg');
-    background-size: cover;
-    background-position: center;
-    border-radius: 3vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    block-size: 20vh;
-    font-size: 6vh;
-    color: white;
-    text-shadow: 2vh -1vh 2vh #000
-    /* used codesdope.com to play with text shadow */
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
 }
 
 header {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
-nav { 
+h1 {
+    width: 50%;
+    /* block-size: 20vh; */
+    font-size: 6vh;
+    color: white;
+    text-shadow: 2vh -1vh 2vh #000;
+    /* used codesdope.com to play with text shadow */
+    margin: 15px 15px 0px 15px;
+    padding: 15px;
+}
+
+#pageHeader{
+    background: url('https://i.imgur.com/IwzXkdT.jpg');
+    background-size: cover;
+    background-position: center;
+    /* border-radius: 3vh 3vh 0 0; */
+    border-radius: 3vh;
+    width: 1024px;
+    height: 240px;
+    position: relative;
+}
+
+#topNav{
     display: flex;
-    align-items: center;
+    list-style-type: none;
+    /* margin: 0 15px 0px 15px; */
+    margin: 0;
+    padding: 15px;
+    background-color: rosybrown;
+    flex-direction: row;
     justify-content: space-around;
+    border-radius: 0 0 3vh 3vh;
+}
+
+#navWrap {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.navStyle {
+    color: black;
 }
 
 .mainbox {
@@ -47,21 +73,24 @@ nav {
     background-color: floralwhite;
     margin: 3vh;
     padding: 4vh;
-    width: 60%;
-
+    width: 60%
 }
+
 .first, .third {
     display: flex;
     flex-direction: column;
     float: left;
-    border-top-right-radius: 3vh;
-    border-bottom-right-radius: 3vh;
+    border-radius: 0 3vh 3vh 3vh;
+    /* border-top-right-radius: 3vh;
+    border-bottom-right-radius: 3vh; */
 }
+
 .second, .fourth {
     display: flex;
     float: right;
-    border-top-left-radius: 3vh;
-    border-bottom-left-radius: 3vh;
+    border-radius: 3vh 0 3vh 3vh;
+    /* border-top-left-radius: 3vh;
+    border-bottom-left-radius: 3vh; */
 }
 
 .workExpList li {
@@ -73,30 +102,24 @@ nav {
 footer {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background-color: antiquewhite;
     width: 100%;
-    font-size: 2vh;
-    
+    font-size: 3vh;
+    margin-top: 25px;
+    padding-top: 25px;
 }
+
 footer li {
+    display: inline-flex;
     list-style: none;
     align-items: center;
     padding: .5vh;
+    gap: 20px;
 }
-footer h4{
-    display: flex;
-    justify-content: space-around;
-    width: 30%;
-    padding: 2vh;
-    margin: 2vh;
-}
-.emailSubmit {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 a {
+    display: inline-flex;
     text-decoration: none;
 }
 
@@ -158,8 +181,23 @@ a {
     justify-content: space-between;
 }
 
-@media (max-width: 600px) {
-    
+@media (max-width: 500px) {
+    body {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    h1 {
+        width: 100%;
+        line-height: 1em;
+        font-size: 4vh;
+    }
+    #pageHeader{
+        width: 90%;
+    }
+    #topNav {
+        display: flex;
+        flex-direction: column;
+    }
     .resume-item {
         display: flex;    
         flex-direction: column;
@@ -182,12 +220,14 @@ a {
     display: flex;
     flex-direction: column;
     float: left;
-    border-top-right-radius: 3vh;
-    border-bottom-right-radius: 3vh;
+    border-radius: 0 3vh 3vh 3vh;
+    /* border-top-right-radius: 3vh;
+    border-bottom-right-radius: 3vh; */
 }
 .project2, .project4 {
     display: flex;
     float: right;
-    border-top-left-radius: 3vh;
-    border-bottom-left-radius: 3vh;
+    border-radius: 3vh 0 3vh 3vh;
+    /* border-top-left-radius: 3vh;
+    border-bottom-left-radius: 3vh; */
 }

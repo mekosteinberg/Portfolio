@@ -10,17 +10,7 @@ $(() => {
         $('.third > div.content').toggleClass("show");
     })
 
-    $('#so2Header').on('click', function () {
-        $('.third > div.content').toggleClass("show");
-    })
-
-    $('#fircrestHeader').on('click', function () {
-        $('.third > div.content').toggleClass("show");
-    })
-
-    $('#pumpwellHeader').on('click', function () {
-        $('.third > div.content').toggleClass("show");
-    })
+    
 
 
 
