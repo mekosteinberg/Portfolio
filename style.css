@@ -36,7 +36,9 @@ nav {
 .mainbox {
     display: flex;
     flex-direction: column;
-    block-size: 12vh;
+    /* block-size: 12vh; */
+    width: 1024px;
+    margin: 0 auto;
 }
 
 .first, .second, .third, .fourth {
@@ -126,26 +128,44 @@ a {
 /* RELATING TO CV HTML */
 
 .first-resume, .second-resume, .third-resume, .fourth-resume {
-    display: flex;
-    justify-content: center;
     background-color: floralwhite;
     margin: 3vh;
-    padding: 4vh;
+    padding: 4vh 6vh;
     width: 60%;
-
 }
+
 .first-resume, .third-resume {
-    display: flex;
-    flex-direction: column;
-    float: left;
-    border-top-right-radius: 3vh;
-    border-bottom-right-radius: 3vh;
+    /* border-radius: 3vh;; */
+    /* border-top-right-radius: 3vh;
+    border-bottom-right-radius: 3vh; */
 }
 .second-resume, .fourth-resume {
+    /* border-top-left-radius: 3vh;
+    border-bottom-left-radius: 3vh; */
+}
+.to-the-left {
     display: flex;
-    float: right;
-    border-top-left-radius: 3vh;
-    border-bottom-left-radius: 3vh;
+    justify-content: flex-start;
+}
+.to-the-right {
+    display: flex;
+    justify-content: flex-end;
+}
+.resume-item {
+    border-radius: 3vh;
+    display: flex;    
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+    
+    .resume-item {
+        display: flex;    
+        flex-direction: column;
+        /* align-items: center;
+        justify-content: space-between; */
+    }
 }
 
 /* RELATING TO PROJECTS HTML */
