@@ -27,6 +27,12 @@ header {
     justify-content: center;
 }
 
+nav { 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .mainbox {
     display: flex;
     flex-direction: column;
@@ -136,6 +142,30 @@ a {
     border-bottom-right-radius: 3vh;
 }
 .second-resume, .fourth-resume {
+    display: flex;
+    float: right;
+    border-top-left-radius: 3vh;
+    border-bottom-left-radius: 3vh;
+}
+
+/* RELATING TO PROJECTS HTML */
+.project1, .project2, .project3, .project4 {
+    display: flex;
+    justify-content: center;
+    background-color: floralwhite;
+    margin: 3vh;
+    padding: 4vh;
+    width: 60%;
+
+}
+.project1, .project3 {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    border-top-right-radius: 3vh;
+    border-bottom-right-radius: 3vh;
+}
+.project2, .project4 {
     display: flex;
     float: right;
     border-top-left-radius: 3vh;
