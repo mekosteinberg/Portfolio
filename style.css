@@ -82,7 +82,7 @@ footer li {
     align-items: center;
     padding: .5vh;
 }
-footer ul{
+footer h4{
     display: flex;
     justify-content: space-around;
     width: 30%;
