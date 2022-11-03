@@ -1,3 +1,4 @@
+/* HOME SCREEN AND HEADERS/FOOTERS/NAVBAR */
 body {
     background-color: rgb(64, 23, 77);
     margin-left: 3vh;
@@ -45,10 +46,14 @@ header {
     display: flex;
     flex-direction: column;
     float: left;
+    border-top-right-radius: 3vh;
+    border-bottom-right-radius: 3vh;
 }
 .second, .fourth {
     display: flex;
     float: right;
+    border-top-left-radius: 3vh;
+    border-bottom-left-radius: 3vh;
 }
 
 .workExpList li {
@@ -74,9 +79,9 @@ footer li {
 footer ul{
     display: flex;
     justify-content: space-around;
-    width: 30%
-    padding: 2vh
-    margin:2vh
+    width: 30%;
+    padding: 2vh;
+    margin: 2vh;
 }
 .emailSubmit {
     display: flex;
@@ -88,14 +93,14 @@ a {
 }
 
 .third > .content {
-    height: 40px;
+    height: 8.5vh;
     transition: height .5s;
     -webkit-transition: height .5s;
     -moz-transition: height .5s;
 }
 
 .third > .content.show {
-    height: 600px;
+    height: 250px;
 }
 
 .third > .content > .workExpList {
@@ -108,4 +113,31 @@ a {
 .third > .content.show > .workExpList {
     visibility: visible;
     opacity: 1;    
+}
+
+/* .third > */
+
+/* RELATING TO CV HTML */
+
+.first-resume, .second-resume, .third-resume, .fourth-resume {
+    display: flex;
+    justify-content: center;
+    background-color: floralwhite;
+    margin: 3vh;
+    padding: 4vh;
+    width: 60%;
+
+}
+.first-resume, .third-resume {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    border-top-right-radius: 3vh;
+    border-bottom-right-radius: 3vh;
+}
+.second-resume, .fourth-resume {
+    display: flex;
+    float: right;
+    border-top-left-radius: 3vh;
+    border-bottom-left-radius: 3vh;
 }
