@@ -157,15 +157,15 @@ a {
     width: 60%;
 }
 
-.first-resume, .third-resume {
+/* .first-resume, .third-resume {
     /* border-radius: 3vh;; */
     /* border-top-right-radius: 3vh;
     border-bottom-right-radius: 3vh; */
-}
-.second-resume, .fourth-resume {
+/* } */
+/* .second-resume, .fourth-resume { */
     /* border-top-left-radius: 3vh;
     border-bottom-left-radius: 3vh; */
-}
+/* } */ 
 .to-the-left {
     display: flex;
     justify-content: flex-start;
