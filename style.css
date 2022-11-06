@@ -1,8 +1,8 @@
 /* HOME SCREEN AND HEADERS/FOOTERS/NAVBAR */
 body {
     background-color: rgb(64, 23, 77);
-    margin-left: 3vh;
-    margin-right: 3vh;
+    margin-left: 15px;
+    margin-right: 15px;
     width: 100%;
     margin: 0 auto;
     font-family: 'Rubik', sans-serif;
@@ -18,9 +18,9 @@ header {
 h1 {
     width: 50%;
     /* block-size: 20vh; */
-    font-size: 6vh;
+    font-size: 36px;
     color: white;
-    text-shadow: 2vh -1vh 2vh #000;
+    text-shadow: 10px -5px 15px black;
     /* used codesdope.com to play with text shadow */
     margin: 15px 15px 0px 15px;
     padding: 15px;
@@ -31,7 +31,7 @@ h1 {
     background-size: cover;
     background-position: center;
     /* border-radius: 3vh 3vh 0 0; */
-    border-radius: 3vh;
+    border-radius: 25px;
     width: 1024px;
     height: 240px;
     position: relative;
@@ -46,7 +46,7 @@ h1 {
     background-color: rosybrown;
     flex-direction: row;
     justify-content: space-around;
-    border-radius: 0 0 3vh 3vh;
+    border-radius: 0 0 25px 25px;
 }
 
 #navWrap {
@@ -70,9 +70,9 @@ h1 {
 
 .first, .second, .third {
     background-color: floralwhite;
-    margin: 3vh;
-    padding: 4vh;
-    width: 80%
+    margin: 15px;
+    padding: 24px;
+    width: 80%;
 }
 
 .first, .third {
@@ -80,7 +80,7 @@ h1 {
     justify-content: center;
     flex-direction: column;
     float: left;
-    border-radius: 0 3vh 3vh 3vh;
+    border-radius: 0 25px 25px 25px;
     /* border-top-right-radius: 3vh;
     border-bottom-right-radius: 3vh; */
 }
@@ -89,7 +89,7 @@ h1 {
 }
 .second {
     float: right;
-    border-radius: 3vh 0 3vh 3vh;
+    border-radius: 25px 0 25px 25px;
 }
 
 /* .fourth {
@@ -116,11 +116,11 @@ h1 {
 /* //hides all other images */
 #picContainer img {
     display: none;
-    border-radius: 2vh;
+    border-radius: 25px;
     border: 2px solid black;
     max-height: fit-content;
     box-sizing: border-box;
-    box-shadow: 2vh 1.5vh gray;
+    box-shadow: 15px 12px gray;
 
 }
 .images {
@@ -147,7 +147,7 @@ footer {
     justify-content: space-around;
     background-color: antiquewhite;
     width: 100%;
-    font-size: 3vh;
+    font-size: 16px;
     margin-top: 25px;
     padding-top: 25px;
 }
@@ -156,7 +156,7 @@ footer li {
     display: inline-flex;
     list-style: none;
     align-items: center;
-    padding: .5vh;
+    padding: 12px;
     gap: 20px;
 }
 
@@ -194,8 +194,8 @@ a {
 
 .first-resume, .second-resume, .third-resume, .fourth-resume {
     background-color: floralwhite;
-    margin: 3vh;
-    padding: 4vh 6vh;
+    margin: 15px;
+    padding: 24px 36px;
     width: auto;
 }
 /* .first-resume, .third-resume {
@@ -216,7 +216,7 @@ a {
     justify-content: flex-end;
 }
 .resume-item {
-    border-radius: 3vh;
+    border-radius: 25px;
     display: flex;    
     align-items: center;
     justify-content: space-between;
@@ -227,10 +227,47 @@ a {
         padding-left: 5px;
         padding-right: 5px;
     }
+    header {
+        width: 100%;
+    }
     h1 {
         width: 100%;
         line-height: 1em;
-        font-size: 4vh;
+        font-size: 24px;
+    }
+    #topNav {
+        font-size: 16px; 
+    }
+    .mainbox {
+        width: 90%;
+    }
+    #welcomeheader {
+        font-size: 20px;
+    }
+    .first{
+        padding: 24px;
+    }
+    /* #picContainer {
+        display: flex;
+        flex-direction: column;   
+    } */
+    .images{ 
+        /* display: flex;
+        order: 1; */
+        height: auto;
+        width: 80%;
+    }
+    .button.previous{
+        /* display: flex; */
+        /* align-self: flex-end; */
+        margin-right: 15px;
+        /* order: 2; */
+    }
+    .button.next{
+        /* display: flex; */
+        /* align-self: flex-end; */
+        margin-left: 20px;
+        /* order: 2; */
     }
     #pageHeader{
         width: 90%;
@@ -244,6 +281,9 @@ a {
         flex-direction: column;
         /* align-items: center;
         justify-content: space-between; */
+    }
+    footer {
+        width: 100%;
     }
 }
 
