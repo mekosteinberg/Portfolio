@@ -6,4 +6,8 @@ Day 2: Part 1: Wednesday 6-2pm Stuggled to get a fade/expand feature working
     Part 2: Wednesday evening. I realized I hadn't created multiple pages, just 
         included everything within the scope of one page. SO that freaked me out and set me back. Created more pages to accomplish my tasks and set to work. Youtube more modal videos as recommended by mentors. 
 
-Day 3: 
+Day 3: Got the Jquery for the carousel and modal buttons working... after 
+    working all day on it! Now to plug it into the other spots needed. Lots of frustration and searching for answers. Power went out and unable to do more tonight.
+
+Day 4: Part 1:Power is still out, but charged the laptop. Tried working on my 
+    13" screen and almost chucked it across the room! Instead, we hooked up a generator and ran the cord into the office so I could work on my big screen. Just using lots of blankets! Still putting in data now that the buttons work. I may have overshot my photos for the carousel, but its just a lot of data entry, not difficult. Still need styling done and to make sure the sight is working on mobile devices how I think it is. 

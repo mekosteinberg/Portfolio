@@ -118,14 +118,18 @@ h1 {
     display: none;
     border-radius: 2vh;
     border: 2px solid black;
-
-}
-.images {
-    width: 400px;
     max-height: fit-content;
     box-sizing: border-box;
     box-shadow: 2vh 1.5vh gray;
-    border-radius: 2vh;
+
+}
+.images {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 600px;
+    /* max-height: fit-content; */
+    /* border-radius: 2vh; */
 }
 
 .button {
@@ -192,9 +196,8 @@ a {
     background-color: floralwhite;
     margin: 3vh;
     padding: 4vh 6vh;
-    width: 60%;
+    width: 70%;
 }
-
 /* .first-resume, .third-resume {
     /* border-radius: 3vh;; */
     /* border-top-right-radius: 3vh;
@@ -272,7 +275,8 @@ a {
 /* Modal stuff */
 #modal {
     background-color: white;
-    height: 450px;
+    height: auto; 
+    /* height: 450px; */
     width: 550px;
     border-radius: 3vh;
     margin: 150px auto;
@@ -292,3 +296,12 @@ a {
 		overflow: auto;
 }
 
+.modal-buttons.open {
+    border: none;
+    background-color: floralwhite ;
+}
+
+.close {
+    text-shadow: 0 1px 0 whitesmoke;
+    opacity: .5;
+}
