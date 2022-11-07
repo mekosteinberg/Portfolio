@@ -1,8 +1,3 @@
-const sosJobDescription = "Accomplish a broad range of responsibilities including; accurate and timely data entry, understanding, and selecting inventory and services in key databases, communicating with referral sources, and appropriately utilizing technology to notate patient information/communication. Have a thorough understanding the entire front-end process to ensure successful service for our patients. Works in a fast-paced environment answering inbound calls and making outbound calls. Maybe responsible for obtaining, analyze, and verify the accuracy of information received from referrals, create orders, and or schedule the patient to receive equipment as ordered by their doctor. Educate Patients of their financial responsibility when applicable. Responsible for ensuring customers receive PAP equipment by scheduling an appointment for the customer to come in to pick up equipment and receive proper instruction on how to best use the equipment. Responsible for encouraging client compliance with PAP equipment and program."
-
-const soundOxygen = () => {
-    $('<p>').attr('id', 'sO2JobDetails').text($(sosJobDescription)).appendTo($('#soundO2'))
-}
 //carousel images html page
 let currentImgIndex = 0
 
@@ -37,7 +32,7 @@ const carouselImages = [
         alt: "rickety bridge over river"
     },
     {
-        image:"images/599713_4205011360915_519458590_n.jpg",
+        image: "images/599713_4205011360915_519458590_n.jpg",
         alt: "2 tents glacier camping"
     },
     {
@@ -45,7 +40,7 @@ const carouselImages = [
         alt: "2 people learning to kayak in fall"
     },
     {
-        image:"images/207007_1042813547946_3930_n.jpg",
+        image: "images/207007_1042813547946_3930_n.jpg",
         alt: "red R6 sport bike"
     },
     {
@@ -53,7 +48,7 @@ const carouselImages = [
         alt: "close up quilting pattern king size blanket"
     },
     {
-        image:"images/17038747_714393505521_4619214142886511370_o.jpg",
+        image: "images/17038747_714393505521_4619214142886511370_o.jpg",
         alt: "silly cross country skiing"
     },
     {
@@ -61,7 +56,7 @@ const carouselImages = [
         alt: "gray teal and pink dandelion quilt"
     },
     {
-        image:"images/20200820_110753.jpg",
+        image: "images/20200820_110753.jpg",
         alt: "kids in hats inspecting jellyfish"
     },
     {
@@ -81,11 +76,11 @@ const carouselImages = [
         alt: "motorcyles on street",
     },
     {
-        image:"images/20191027_101513.jpg",
+        image: "images/20191027_101513.jpg",
         alt: "flamingo cake"
     },
     {
-        image:"images/20200119_112059.jpg",
+        image: "images/20200119_112059.jpg",
         alt: "cross country ski family selfie"
     },
     {
@@ -113,7 +108,7 @@ const carouselImages = [
         alt: "metal skeleton on shilshole breakwater"
     },
     {
-        image:"images/20220424_114557.jpg",
+        image: "images/20220424_114557.jpg",
         alt: "peaceful water on Lake Riley"
     },
     {
@@ -145,8 +140,9 @@ const carouselImages = [
         alt: "Hiking Section J PCT"
     }
 ]
-
 const numOfImages = carouselImages.length - 1
+
+// const rootsText = "Born and raised in the PNW, I really identify with the term ROOTS. Growing up with an appreciation for the outdoors and all sorts of outdoors activities made my heart root deep into Western Washington. I grew up riding dirtbikes, hiking & camping. As I grew older my interests expanded into backpacking, other motorcycles, water skiing, downhill or crosscountry skiing, snowshoeing and most recently sailing. Even if my future leads me out of Washington State this is where my roots lie."
 
 const workExperience = {
     soundO2: [
@@ -183,10 +179,29 @@ const workExperience = {
     ]
 }
 
+const Projects = {
+    project1: [
+        {
+        name: "Not For Vegans",
+        description: "Bacon ipsum dolor amet short ribs brisket venison rump drumstick pig sausage prosciutto chicken spare ribs salami picanha doner. Kevin capicola sausage, buffalo bresaola venison turkey shoulder picanha ham pork tri-tip meatball meatloaf ribeye. Doner spare ribs andouille bacon sausage. Ground round jerky brisket pastrami shank."
+        }
+    ],
+    project2: [{
+        name: "Flying Spaghetti Monster",
+        description: "Lookout flogging bilge rat main sheet bilge water nipper fluke to go on account heave down clap of thunder. Reef sails six pounders skysail code of conduct sloop cog Yellow Jack gunwalls grog blossom starboard. Swab black jack ahoy Brethren of the Coast schooner poop deck main sheet topmast furl marooned."
+    }],
+    project3: [{
+        name: "Wallace & Gromit",
+        description: "Cheese on toast airedale the big cheese. Danish fontina cheesy grin airedale danish fontina taleggio the big cheese macaroni cheese port-salut. Edam fromage lancashire feta caerphilly everyone loves chalk and cheese brie. Red leicester parmesan cheese and biscuits cheesy feet blue castello cheesecake fromage frais smelly cheese."
+    }],
+    project4: [{
+        name: "OK For Vegans",
+        description: "Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify."
+    }]
+}
+
 $(() => {
-    // $('#workExpHeader').on('click', function () {
-    //     $('.third > div.content').toggleClass("show");
-    // })
+    //images for carousel loop
     for (let i = 0; i < carouselImages.length; i++) {
         $('<img>').attr('src', carouselImages[i].image)
             .attr('alt', carouselImages[i].alt)
@@ -217,15 +232,17 @@ $(() => {
             .css('display', 'block')
     })
 
+    //Work Experience Modal Buttons
+
     $(".modal-buttons.open").on('click', function () {
         console.log($(this).attr("data-modal"))
         const wex = workExperience[$(this).attr("data-modal")]
         console.log(wex)
         $("#modal-textbox").empty()
-            for (let i=0; i < wex.length; i++){
-                const $title = $('<h3>').text(wex[i].title);
-                const $summary = $('<p>').text(wex[i].summary);
-                $("#modal-textbox").append($title).append($summary);
+        for (let i = 0; i < wex.length; i++) {
+            const $title = $('<h3>').text(wex[i].title);
+            const $summary = $('<p>').text(wex[i].summary);
+            $("#modal-textbox").append($title).append($summary);
 
         }
         $('#modal-overlay').css("display", "block")
@@ -233,6 +250,30 @@ $(() => {
 
     $(".modal-buttons.close").on('click', () => {
         $('#modal-overlay').css("display", "none")
+    })
+
+    //Roots (on home page) drop down button
+    // $('.roots-dropdown.open').on('click', function () {
+    //         $('.roots-text').toggleClass("show");
+    //     })
+
+    //Projects 
+    $(".project-button.open").on('click', function () {
+        console.log($(this).attr("project-data"))
+        const project = Projects[$(this).attr("project-data")]
+        console.log(project)
+        $("#project-textbox").empty()
+        for (let i = 0; i < project.length; i++) {
+            const $name = $('<h3>').text(project[i].name);
+            const $description = $('<p>').text(project[i].description);
+            $("#project-textbox").append($name).append($description);
+
+        }
+        $('#project-overlay').css("display", "block")
+    })
+
+    $(".project-button.close").on('click', () => {
+        $('#project-overlay').css("display", "none")
     })
 
 })

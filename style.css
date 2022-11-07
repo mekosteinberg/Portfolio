@@ -1,4 +1,8 @@
 /* HOME SCREEN AND HEADERS/FOOTERS/NAVBAR */
+/* https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_col-s */
+* {
+    box-sizing: border-box;
+}
 body {
     background-color: rgb(64, 23, 77);
     margin-left: 15px;
@@ -64,7 +68,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     /* block-size: 12vh; */
-    width: 1024px;
+    /* width: 1024px; */
     margin: 0 auto;
 }
 
@@ -81,17 +85,18 @@ h1 {
     flex-direction: column;
     float: left;
     border-radius: 0 25px 25px 25px;
+    font-size: medium;
     /* border-top-right-radius: 3vh;
     border-bottom-right-radius: 3vh; */
-}
-.first {
-    font-size: medium;
 }
 .second {
     float: right;
     border-radius: 25px 0 25px 25px;
 }
-
+/* .roots-dropdown {
+    border: none;
+    background-color: floralwhite; */
+/* } */
 /* .fourth {
     display: flex;
     justify-content: center;
@@ -159,13 +164,16 @@ footer li {
     padding: 12px;
     gap: 20px;
 }
-
+#contactInfo {
+    display: flex;       
+    flex-direction: column;
+}
 a {
     display: inline-flex;
     text-decoration: none;
 }
 
-.third > .content {
+/* .third > .content {
     height: 8.5vh;
     transition: height .5s;
     -webkit-transition: height .5s;
@@ -176,17 +184,17 @@ a {
     height: 250px;
 }
 
-.third > .content > .workExpList {
+.third > .content > #roots-dropdown {
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear; */
     /* stackoverflow, https://stackoverflow.com/questions/3331353/transitions-on-the-css-display-property */
-}
+/* } */
 
-.third > .content.show > .workExpList {
+/* .third > .content.show > .workExpList {
     visibility: visible;
-    opacity: 1;    
-}
+    opacity: 1;     */
+/* } */
 
 /* .third > */
 
@@ -198,6 +206,9 @@ a {
     padding: 24px 36px;
     width: auto;
 }
+.first-resume {
+    margin-top: 30px;
+}
 /* .first-resume, .third-resume {
     /* border-radius: 3vh;; */
     /* border-top-right-radius: 3vh;
@@ -207,14 +218,14 @@ a {
     /* border-top-left-radius: 3vh;
     border-bottom-left-radius: 3vh; */
 /* } */ 
-.to-the-left {
+/* .to-the-left {
     display: flex;
     justify-content: flex-start;
 }
 .to-the-right {
     display: flex;
     justify-content: flex-end;
-}
+} */
 .resume-item {
     border-radius: 25px;
     display: flex;    
@@ -222,7 +233,99 @@ a {
     justify-content: space-between;
 }
 
-@media (max-width: 500px) {
+/* RELATING TO PROJECTS HTML */
+.p1, .p2, .p3, .p4 {
+    display: flex;
+    justify-content: center;
+    background-color: floralwhite;
+    margin: 3vh;
+    padding: 4vh;
+    width: 60%;
+}
+.p1, .p3 {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    border-radius: 0 3vh 3vh 3vh;
+    /* border-top-right-radius: 3vh;
+    border-bottom-right-radius: 3vh; */
+}
+.p2, .p4 {
+    display: flex;
+    float: right;
+    border-radius: 3vh 0 3vh 3vh;
+    /* border-top-left-radius: 3vh;
+    border-bottom-left-radius: 3vh; */
+}
+
+/* Work Experience Modals */
+#modal {
+    background-color: white;
+    height: auto; 
+    /* height: 450px; */
+    width: 550px;
+    border-radius: 3vh;
+    margin: 150px auto;
+    padding: 1vh 2vh 1vh 2vh;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+#modal-overlay {
+    display: none;
+		background-color: rgba(0,0,0,0.4);
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		z-index: 1;
+		overflow: auto;
+}
+.modal-buttons.open {
+    border: none;
+    background-color: floralwhite;
+}
+#modal-footer {
+    height: 20px;
+}
+
+/* Project modals */
+#project-modal {
+    background-color: white;
+    height: auto; 
+    /* height: 450px; */
+    width: 550px;
+    border-radius: 3vh;
+    margin: 150px auto;
+    padding: 1vh 2vh 1vh 2vh;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+#project-overlay {
+    display: none;
+		background-color: rgba(0,0,0,0.4);
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		z-index: 1;
+		overflow: auto;
+}
+.project-button.open{
+    border: none;
+    background-color: floralwhite;
+}
+#project-footer{
+    height: 20px;
+}
+
+.close {
+    text-shadow: 0 1px 0 whitesmoke;
+    opacity: .5;
+}
+
+@media (max-width: 480px) {
     body {
         padding-left: 5px;
         padding-right: 5px;
@@ -239,7 +342,8 @@ a {
         font-size: 16px; 
     }
     .mainbox {
-        width: 90%;
+        /* width: 90%; */
+        margin: 0 12px;
     }
     #welcomeheader {
         font-size: 20px;
@@ -285,63 +389,8 @@ a {
     footer {
         width: 100%;
     }
-}
-
-/* RELATING TO PROJECTS HTML */
-.project1, .project2, .project3, .project4 {
-    display: flex;
-    justify-content: center;
-    background-color: floralwhite;
-    margin: 3vh;
-    padding: 4vh;
-    width: 60%;
-}
-.project1, .project3 {
-    display: flex;
-    flex-direction: column;
-    float: left;
-    border-radius: 0 3vh 3vh 3vh;
-    /* border-top-right-radius: 3vh;
-    border-bottom-right-radius: 3vh; */
-}
-.project2, .project4 {
-    display: flex;
-    float: right;
-    border-radius: 3vh 0 3vh 3vh;
-    /* border-top-left-radius: 3vh;
-    border-bottom-left-radius: 3vh; */
-}
-
-/* Modal stuff */
-#modal {
-    background-color: white;
-    height: auto; 
-    /* height: 450px; */
-    width: 550px;
-    border-radius: 3vh;
-    margin: 150px auto;
-    padding: 1vh 2vh 1vh 2vh;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-}
-
-#modal-overlay {
-    display: none;
-		background-color: rgba(0,0,0,0.4);
-		position: fixed;
-		top: 0;
-		left: 0;
-		height: 100%;
-		width: 100%;
-		z-index: 1;
-		overflow: auto;
-}
-
-.modal-buttons.open {
-    border: none;
-    background-color: floralwhite ;
-}
-
-.close {
-    text-shadow: 0 1px 0 whitesmoke;
-    opacity: .5;
+    
+    #modal {
+        width: auto;
+    }
 }
