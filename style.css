@@ -305,7 +305,7 @@ a {
     }
 
     .mainbox {
-        /* width: 90%; */
+        width: 90%;
         margin: 10px 12px;
     }
 
@@ -316,7 +316,6 @@ a {
 
     h3 {
         font-size: 16px;
-
     }
 
     .p1,
@@ -328,20 +327,16 @@ a {
     }
 
     .images {
-
         height: auto;
         width: 80%;
     }
 
     .button.previous {
-
         margin-right: 15px;
-
     }
 
     .button.next {
         margin-left: 20px;
-
     }
 
     #pageHeader {
