@@ -76,7 +76,7 @@ h1 {
     background-color: floralwhite;
     margin: 15px;
     padding: 24px;
-    width: 80%;
+    width: 90%;
 }
 
 .first, .third {
@@ -234,26 +234,32 @@ a {
 }
 
 /* RELATING TO PROJECTS HTML */
+
 .p1, .p2, .p3, .p4 {
     display: flex;
     justify-content: center;
     background-color: floralwhite;
-    margin: 3vh;
-    padding: 4vh;
+    margin: 15px;
+    padding: 24px;
     width: 60%;
+}
+.p1 {
+    margin-top: 30px;
 }
 .p1, .p3 {
     display: flex;
     flex-direction: column;
     float: left;
-    border-radius: 0 3vh 3vh 3vh;
+    margin-left: 25px;
+    border-radius: 0 25px 25px 25px;
     /* border-top-right-radius: 3vh;
     border-bottom-right-radius: 3vh; */
 }
 .p2, .p4 {
     display: flex;
     float: right;
-    border-radius: 3vh 0 3vh 3vh;
+    margin-right: 25px;
+    border-radius: 25px 0 25px 25px;
     /* border-top-left-radius: 3vh;
     border-bottom-left-radius: 3vh; */
 }
@@ -264,10 +270,10 @@ a {
     height: auto; 
     /* height: 450px; */
     width: 550px;
-    border-radius: 3vh;
+    border-radius: 25px;
     margin: 150px auto;
     padding: 1vh 2vh 1vh 2vh;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 12px rgba(0, 0, 0, 0.2);
 }
 
 #modal-overlay {
@@ -298,7 +304,7 @@ a {
     border-radius: 3vh;
     margin: 150px auto;
     padding: 1vh 2vh 1vh 2vh;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 12px rgba(0, 0, 0, 0.2);
 }
 
 #project-overlay {
@@ -351,6 +357,9 @@ a {
     .first{
         padding: 24px;
     }
+    h3 {
+        font-size: 20px;
+    }
     /* #picContainer {
         display: flex;
         flex-direction: column;   
@@ -389,8 +398,7 @@ a {
     footer {
         width: 100%;
     }
-    
-    #modal {
+    #modal, #project-modal {
         width: auto;
     }
 }
