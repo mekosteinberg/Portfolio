@@ -182,8 +182,8 @@ const workExperience = {
 const Projects = {
     project1: [
         {
-        name: "Not For Vegans",
-        description: "Bacon ipsum dolor amet short ribs brisket venison rump drumstick pig sausage prosciutto chicken spare ribs salami picanha doner. Kevin capicola sausage, buffalo bresaola venison turkey shoulder picanha ham pork tri-tip meatball meatloaf ribeye. Doner spare ribs andouille bacon sausage. Ground round jerky brisket pastrami shank."
+            name: "Not For Vegans",
+            description: "Bacon ipsum dolor amet short ribs brisket venison rump drumstick pig sausage prosciutto chicken spare ribs salami picanha doner. Kevin capicola sausage, buffalo bresaola venison turkey shoulder picanha ham pork tri-tip meatball meatloaf ribeye. Doner spare ribs andouille bacon sausage. Ground round jerky brisket pastrami shank."
         }
     ],
     project2: [{
@@ -201,13 +201,13 @@ const Projects = {
 }
 
 $(() => {
-    //images for carousel loop
+    //images for carousel loop, takes image from the images array, then the nxt one
     for (let i = 0; i < carouselImages.length; i++) {
         $('<img>').attr('src', carouselImages[i].image)
             .attr('alt', carouselImages[i].alt)
             .appendTo($('.images'))
     }
-    //carousel pic buttons
+    //carousel pic buttons, when you click on the icons it will go left or right in the array and then loop around to the end or beginning
     $('.next').on('click', () => {
         $('.images').children().eq(currentImgIndex)
             .css('display', 'none')
