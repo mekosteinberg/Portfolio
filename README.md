@@ -12,4 +12,4 @@ Day 4: Part 1: Power is still out, but charged the laptop. Tried working on my 1
 
 Day 5: Today has been a struggle to get dropdowns working and style
     appropriately for responsive design. I know what I would do differently, next time I'd start building the mobile/phone version and then style for larger, instead of the starting with web. I only now discovered in the dev tools that you can switch TYPES of mobile devices, or make custom sized ones. I know, I know... duh. Styling Styling Styling right now, still need to host it
-    
+        Part2: If I dont stop soon I'm going to break something and have to spend the rest of the night fixing it. I think mobile is pretty much set. I got it deployed to Netlify.
