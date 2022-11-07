@@ -22,7 +22,6 @@ header {
 
 h1 {
     width: 50%;
-    /* block-size: 20vh; */
     font-size: 36px;
     color: white;
     text-shadow: 10px -5px 15px black;
@@ -35,7 +34,6 @@ h1 {
     background: url('https://i.imgur.com/IwzXkdT.jpg');
     background-size: cover;
     background-position: center;
-    /* border-radius: 3vh 3vh 0 0; */
     border-radius: 25px;
     width: 1024px;
     height: 240px;
@@ -45,7 +43,6 @@ h1 {
 #topNav {
     display: flex;
     list-style-type: none;
-    /* margin: 0 15px 0px 15px; */
     margin: 0;
     padding: 15px;
     background-color: rosybrown;
@@ -60,16 +57,21 @@ h1 {
     bottom: 0;
 }
 
-.navStyle {
+a.navStyle {
     color: black;
+    display: block;
+}
+
+a.navStyle:active,
+a.navStyle:hover {
+    text-decoration: none;
 }
 
 .mainbox {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* block-size: 12vh; */
-    /* width: 1024px; */
+    width: 840px;
     margin: 0 auto;
 }
 
@@ -90,27 +92,12 @@ h1 {
     float: left;
     border-radius: 0 25px 25px 25px;
     font-size: medium;
-    /* border-top-right-radius: 3vh;
-    border-bottom-right-radius: 3vh; */
 }
 
 .second {
     float: right;
     border-radius: 25px 0 25px 25px;
 }
-
-/* .roots-dropdown {
-    border: none;
-    background-color: floralwhite; */
-/* } */
-/* .fourth {
-    display: flex;
-    justify-content: center;
-    float: right;
-    border-radius: 3vh 0 3vh 3vh;
-    /* border-top-left-radius: 3vh;
-    border-bottom-left-radius: 3vh; */
-/* } */
 
 #picContainer {
     display: flex;
@@ -132,7 +119,6 @@ h1 {
     max-height: fit-content;
     box-sizing: border-box;
     box-shadow: 15px 12px gray;
-
 }
 
 .images {
@@ -140,19 +126,11 @@ h1 {
     align-items: center;
     width: 400px;
     height: 600px;
-    /* max-height: fit-content; */
-    /* border-radius: 2vh; */
 }
 
 .button {
     font-size: large;
 }
-
-/* .workExpList li {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-} */
 
 footer {
     display: flex;
@@ -183,31 +161,6 @@ a {
     text-decoration: none;
 }
 
-/* .third > .content {
-    height: 8.5vh;
-    transition: height .5s;
-    -webkit-transition: height .5s;
-    -moz-transition: height .5s;
-}
-
-.third > .content.show {
-    height: 250px;
-}
-
-.third > .content > #roots-dropdown {
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.5s linear; */
-/* stackoverflow, https://stackoverflow.com/questions/3331353/transitions-on-the-css-display-property */
-/* } */
-
-/* .third > .content.show > .workExpList {
-    visibility: visible;
-    opacity: 1;     */
-/* } */
-
-/* .third > */
-
 /* RELATING TO CV HTML */
 
 .first-resume,
@@ -224,32 +177,15 @@ a {
     margin-top: 30px;
 }
 
-/* .first-resume, .third-resume {
-    /* border-radius: 3vh;; */
-/* border-top-right-radius: 3vh;
-    border-bottom-right-radius: 3vh; */
-/* } */
-/* .second-resume, .fourth-resume { */
-/* border-top-left-radius: 3vh;
-    border-bottom-left-radius: 3vh; */
-/* } */
-/* .to-the-left {
-    display: flex;
-    justify-content: flex-start;
-}
-.to-the-right {
-    display: flex;
-    justify-content: flex-end;
-} */
 .resume-item {
     border-radius: 25px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 700px;
 }
 
 /* RELATING TO PROJECTS HTML */
-
 .p1,
 .p2,
 .p3,
@@ -270,27 +206,22 @@ a {
 .p3 {
     margin-left: 25px;
     border-radius: 0 25px 25px 25px;
-    /* border-top-right-radius: 3vh;
-    border-bottom-right-radius: 3vh; */
 }
 
 .p2,
 .p4 {
     margin-right: 25px;
     border-radius: 25px 0 25px 25px;
-    /* border-top-left-radius: 3vh;
-    border-bottom-left-radius: 3vh; */
 }
 
 /* Work Experience Modals */
 #modal {
     background-color: white;
     height: auto;
-    /* height: 450px; */
     width: 550px;
     border-radius: 25px;
     margin: 150px auto;
-    padding: 1vh 2vh 1vh 2vh;
+    padding: 10px 15px;
     box-shadow: 0 15px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -319,11 +250,10 @@ a {
 #project-modal {
     background-color: white;
     height: auto;
-    /* height: 450px; */
     width: 550px;
     border-radius: 3vh;
     margin: 150px auto;
-    padding: 1vh 2vh 1vh 2vh;
+    padding: 10px 15px;
     box-shadow: 0 15px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -353,6 +283,7 @@ a {
     opacity: .5;
 }
 
+/* Mobile Devices parameters */
 @media (max-width: 480px) {
     body {
         padding-left: 5px;
@@ -370,27 +301,24 @@ a {
     }
 
     #topNav {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .mainbox {
         /* width: 90%; */
-        margin: 0 12px;
+        margin: 10px 12px;
     }
 
-    #welcomeheader {
+    #welcomeheader,
+    #roots {
         font-size: 20px;
     }
 
     h3 {
         font-size: 16px;
-        margin: 0 auto;
+
     }
 
-    /* #picContainer {
-        display: flex;
-        flex-direction: column;   
-    } */
     .p1,
     .p2,
     .p3,
@@ -400,24 +328,20 @@ a {
     }
 
     .images {
-        /* display: flex;
-        order: 1; */
+
         height: auto;
         width: 80%;
     }
 
     .button.previous {
-        /* display: flex; */
-        /* align-self: flex-end; */
+
         margin-right: 15px;
-        /* order: 2; */
+
     }
 
     .button.next {
-        /* display: flex; */
-        /* align-self: flex-end; */
         margin-left: 20px;
-        /* order: 2; */
+
     }
 
     #pageHeader {
@@ -429,13 +353,21 @@ a {
         flex-direction: column;
     }
 
+    #topNav li {
+        margin-bottom: 10px;
+    }
+
     .resume-item {
         display: flex;
         flex-direction: column;
+        width: 85%;
         margin: 10px;
         padding: 10px;
-        /* align-items: center;
-        justify-content: space-between; */
+
+    }
+
+    .resume-item h3 {
+        line-height: 20px;
     }
 
     footer {
@@ -452,13 +384,18 @@ a {
         justify-content: center;
     }
 
-    footer ul{
+    footer ul {
         margin: 10px 0;
+    }
+
+    footer li {
+        padding: 5px 12px;
     }
 
     footer #links {
         margin-bottom: 30px;
     }
+
     footer li img {
         display: inline-flex;
         list-style: none;

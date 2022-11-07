@@ -142,7 +142,6 @@ const carouselImages = [
 ]
 const numOfImages = carouselImages.length - 1
 
-// const rootsText = "Born and raised in the PNW, I really identify with the term ROOTS. Growing up with an appreciation for the outdoors and all sorts of outdoors activities made my heart root deep into Western Washington. I grew up riding dirtbikes, hiking & camping. As I grew older my interests expanded into backpacking, other motorcycles, water skiing, downhill or crosscountry skiing, snowshoeing and most recently sailing. Even if my future leads me out of Washington State this is where my roots lie."
 
 const workExperience = {
     soundO2: [
@@ -180,12 +179,10 @@ const workExperience = {
 }
 
 const Projects = {
-    project1: [
-        {
+    project1: [{
             name: "Not For Vegans",
             description: "Bacon ipsum dolor amet short ribs brisket venison rump drumstick pig sausage prosciutto chicken spare ribs salami picanha doner. Kevin capicola sausage, buffalo bresaola venison turkey shoulder picanha ham pork tri-tip meatball meatloaf ribeye. Doner spare ribs andouille bacon sausage. Ground round jerky brisket pastrami shank."
-        }
-    ],
+    }],
     project2: [{
         name: "Flying Spaghetti Monster",
         description: "Lookout flogging bilge rat main sheet bilge water nipper fluke to go on account heave down clap of thunder. Reef sails six pounders skysail code of conduct sloop cog Yellow Jack gunwalls grog blossom starboard. Swab black jack ahoy Brethren of the Coast schooner poop deck main sheet topmast furl marooned."
@@ -251,11 +248,6 @@ $(() => {
     $(".modal-buttons.close").on('click', () => {
         $('#modal-overlay').css("display", "none")
     })
-
-    //Roots (on home page) drop down button
-    // $('.roots-dropdown.open').on('click', function () {
-    //         $('.roots-text').toggleClass("show");
-    //     })
 
     //Projects 
     $(".project-button.open").on('click', function () {

@@ -1,4 +1,8 @@
 # Portfolio for Meko
+
+https://msteinberg-portfolio.netlify.app/
+
+
 Day 1: Tuesday 7am-2pmPST + evening/night work time;
     I've started out creating a base skeleton in my html, to get a feel for what I need to have laid out. I know I can (and should) use JQ to create some of these HTML elements, and I will probably amend that later, but Im very visual and need to see it first, even a bad visual helps my brain create a mental map of what needs to be done. Next step will be some styling and flexbox, then onto the JS/JQ. 
 Day 2: Part 1: Wednesday 6-2pm Stuggled to get a fade/expand feature working most the day, modified to a little different idea with Toggle Class than the original I sought out. Finally got one working, realized I should commit. Next step, get each main div working with the toggle, and then focus on modals for each resume in the Work Experience section.
@@ -12,4 +16,7 @@ Day 4: Part 1: Power is still out, but charged the laptop. Tried working on my 1
 
 Day 5: Today has been a struggle to get dropdowns working and style
     appropriately for responsive design. I know what I would do differently, next time I'd start building the mobile/phone version and then style for larger, instead of the starting with web. I only now discovered in the dev tools that you can switch TYPES of mobile devices, or make custom sized ones. I know, I know... duh. Styling Styling Styling right now, still need to host it
-        Part2: If I dont stop soon I'm going to break something and have to spend the rest of the night fixing it. I think mobile is pretty much set. I got it deployed to Netlify.
+        Part2: If I dont stop soon I'm going to break something and have to spend the rest of the night fixing i
+        
+I definitely need to work on documentation, I used a lot of resources from MDN, W3 and JQuery but forgot to copy the links into my psuedo code. I also looked at a lot of websites through dev tools to figure out how they did certain things in the styling. I was very focused on getting what I had to work, but definitely have some ideas on how to do it better next time. I'd definitely start out making the mobile site and then add on and re-arrange from there for larger/desktop devices. I'd also probably iron out the issues I was coming up with in the drop down accordians.
+
